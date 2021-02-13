@@ -1,3 +1,5 @@
+"use strict";
+
 // core version + navigation, pagination modules:
 import Swiper, { Navigation, Pagination } from "swiper";
 
@@ -7,7 +9,6 @@ Swiper.use([Navigation, Pagination]);
 // init Swiper:
 const swiper = new Swiper(".swiper-container", {
   // Optional parameters
-  direction: "vertical",
   loop: true,
 
   // If we need pagination
