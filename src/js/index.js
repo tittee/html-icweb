@@ -67,8 +67,6 @@ const step = (ts) => {
   // }
 };
 
-
-  
     
 function scrollIfNeeded(element, container) {
   if (element.offsetTop < container.scrollTop) {
