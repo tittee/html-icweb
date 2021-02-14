@@ -12,11 +12,19 @@
 2. [Animate](https://animate.style/) - CSS Animations
 3. [CountDownJS](https://github.com/mckamey/countdownjs) - Count Donw Javascript
 
-## Step
-
+## run NPM
 ```bash
 npm i #run npm for package
-gulp # run project by Gulp
+```
+## Test Development : Localhost
+
+```bash
+npm start
+```
+## Production
+
+```bash
+npm run build
 ```
 
 ## License
