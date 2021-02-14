@@ -1,5 +1,6 @@
 "use strict";
 
+import './../scss/index.scss';
 import WOW from "wow.js/dist/wow.js";
 import imagesLoaded from "imagesloaded";
 
@@ -33,9 +34,9 @@ scrollableElement.addEventListener("wheel", checkScrollDirection);
 
 function checkScrollDirection(event) {
   if (checkScrollDirectionIsUp(event)) {
-    console.log("up");
+    // console.log("up");
   } else {
-    console.log("down");
+    // console.log("down");
   }
 }
 
@@ -109,6 +110,25 @@ var iso = new Isotope( elem, {
     gutter: '.gutter-sizer'
   }
 });
+
+imagesLoaded( elem ).on( 'progress', function() {
+  // layout Isotope after each image loads
+  iso.layout();
+});
+
+
+var timer;
+// elem.style.display = 'none';
+function endAndStartTimer() {
+  window.clearTimeout(timer);
+  //var millisecBeforeRedirect = 10000; 
+  timer = window.setTimeout(function(){
+    // elem.style.display = 'block';
+    document.getElementById("elemAll").click();
+  },5000); 
+}
+
+endAndStartTimer()
 
 // bind filter button click
 var filtersElem = document.querySelector('.filters-button-group');
