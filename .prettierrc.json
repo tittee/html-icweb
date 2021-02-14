@@ -4,12 +4,12 @@
   "useTabs": false,
   "singleQuote": true,
   "jsxSingleQuote": false,
-  "trailingComma": "es5",
+  
   "bracketSpacing": true,
   "jsxBracketSameLine": true,
-  "parser": "scss",
+  "parser": "html",
   "requirePragma": true,
-  "proseWrap": "always",
-  "htmlWhitespaceSensitivity": "strict",
+  "proseWrap": "never",
   "endOfLine": "cr"
 }
+
