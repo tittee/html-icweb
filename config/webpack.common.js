@@ -1,30 +1,25 @@
-const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
-const webpack = require("webpack");
 const devMode = process.env.NODE_ENV !== "production";
-const TerserPlugin = require("terser-webpack-plugin");
+
+const webpack = require("webpack");
+
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const CopyWebpackPlugin = require('copy-webpack-plugin')
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const TerserPlugin = require("terser-webpack-plugin");
 
 module.exports = {
   // mode: devMode ? "development" : "production",
   // devtool: devMode ? "eval" : "source-map",
-  entry: ["./src/scss/styles.scss", "./src/js/index.js"],
+  entry: ["./src/scss/index.scss", "./src/js/index.js"],
 
   output: {
-    path: path.resolve(__dirname, "./assets"),
+    path: path.resolve(__dirname, "./dist"),
     filename: "[name].bundle.js",
-    publicPath: "/",
+    // publicPath: "/",
   },
-  devServer: {
-    contentBase: path.join(__dirname, "assets"),
-    compress: true,
-    host: "localhost",
-    hot: true,
-    port: 9000,
-    open: true,
-    inline: false,
-  },
+  
 
   module: {
     rules: [
@@ -43,13 +38,16 @@ module.exports = {
         test: /\.s[ac]ss$/i,
         use: [
           // Creates `style` nodes from JS strings
-          process.env.NODE_ENV !== "production"
+          devMode
             ? "style-loader"
             : MiniCssExtractPlugin.loader,
           // Translates CSS into CommonJS
           {
             loader: "css-loader",
-            options: { importLoaders: 2 },
+            options: { 
+              importLoaders: 2,
+              modules: false
+            },
           },
           {
             loader: "postcss-loader",
@@ -79,45 +77,56 @@ module.exports = {
         use: [{ loader: "html-loader" }],
       },
 
-      // {
-      //   test: /\.(jpg|jpeg|gif|png|svg)$/,
-      //   exclude: /node_modules/,
-      //   use: [
-      //     {
-      //       loader: "file-loader",
-      //       options: {
-      //         name: "[name].[ext]",
-      //         outputPath: "images/",
-      //       },
-      //     },
-      //   ],
-      //   // loader:'url-loader?limit=1024&name=images/[name].[ext]'
-      // },
-      // {
-      //   test: /\.(woff|woff2|eot|ttf)$/,
-      //   exclude: /node_modules/,
-      //   use: [
-      //     {
-      //       loader: "file-loader",
-      //       options: {
-      //         name: "[name].[ext]",
-      //         outputPath: "fonts",
-      //       },
-      //     },
-      //   ],
-      // },
+      {
+        test: /\.(jpg|jpeg|gif|png|svg)$/,
+        exclude: /node_modules/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+              outputPath: "images/",
+            },
+          },
+        ],
+        // loader:'url-loader?limit=1024&name=images/[name].[ext]'
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf)$/,
+        exclude: /node_modules/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+              outputPath: "fonts",
+            },
+          },
+        ],
+      },
     ],
   },
   plugins: [
     new CleanWebpackPlugin(),
-    new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
       filename: "index.html",
       template: "src/templates/index.html",
     }),
     new MiniCssExtractPlugin({
-      filename: devMode ? "[name].css" : "[name].css",
-      chunkFilename: devMode ? "[name].css" : "[name].css",
+      filename: "[name].css",
+      chunkFilename: "[name].css",
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: path.resolve(__dirname, "./dist"),
+          to: 'dist',
+          globOptions: {
+            ignore: ['*.DS_Store'],
+          },
+          noErrorOnMissing: true,
+        },
+      ],
     }),
   ],
   resolve: {

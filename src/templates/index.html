@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gulp.JS V3 - HTML Slicing</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-  <!-- <link rel="stylesheet" href="css/styles.css"> -->
+  <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css">
 </head>
 
 <body>
@@ -136,7 +136,8 @@
         </div>
         <!-- Item -->
         <div class="item w-full lg:w-1/3 text-center px-4 mb-12">
-          <div class="icon text-6xl text-gray-900 mb-6 font-light wow animate__slideInUp"><i class="fas fa-code"></i></div>
+          <div class="icon text-6xl text-gray-900 mb-6 font-light wow animate__slideInUp"><i class="fas fa-code"></i>
+          </div>
           <h3 class="uppercase text-gray-900 mb-4 wow animate__slideInUp">Branding</h3>
           <div class="content">
             <p class="text-gray-500 wow animate__slideInUp">
@@ -162,7 +163,8 @@
         </div>
         <!-- Item -->
         <div class="item w-full lg:w-1/3 text-center px-4 mb-12">
-          <div class="icon text-6xl text-gray-900 mb-6 font-light wow animate__slideInUp"><i class="fas fa-font"></i></div>
+          <div class="icon text-6xl text-gray-900 mb-6 font-light wow animate__slideInUp"><i class="fas fa-font"></i>
+          </div>
           <h3 class="uppercase text-gray-900 mb-4 wow animate__slideInUp">Typhography</h3>
           <div class="content">
             <p class="text-gray-500 wow animate__slideInUp">
@@ -213,70 +215,70 @@
           <div class="item w-full lg:w-1/4 text-center px-4 mb-0 md:mb-0 lg:mb-0">
             <h3 class="text-5xl text-white font-bold mb-1 wow animate__slideInUp" id="time-4">34</h3>
             <p class="uppercase text-white text-sm wow animate__slideInUp">Teams</p>
-            </div>
-            </div>
-            </div>
-            </section>
-            
-            <section class="w-full relative pt-10 lg:pt-20 bg-white">
-              <h2 class="uppercase text-black tracking-wider text-2xl font-bold text-center  mb-8 wow animate__slideInUp">
-                Great Work</h2>
-            
-              <div class="flex flex-wrap justify-center content-center mb-10 wow animate__slideInUp">
-            
-                <div class="button-group filters-button-group">
-                  <button class="button px-1 md:px-2 lg:px-4 uppercase text-base is-checked" data-filter="*">All</button>
-                  <button class="button px-1 md:px-2 lg:px-4 uppercase text-base" data-filter=".branding">Branding</button>
-                  <button class="button px-1 md:px-2 lg:px-4 uppercase text-base" data-filter=".design">Design</button>
-                  <button class="button px-1 md:px-2 lg:px-4 uppercase text-base" data-filter=".uiux">UI / UX</button>
-                  <button class="button px-1 md:px-2 lg:px-4 uppercase text-base" data-filter=".photography">Photography</button>
-                </div>
-              </div>
-            
-              <div class="gridMasonry w-full h-full relative block">
-                <div class="grid-sizer"></div>
-                <div class="grid-item element-item branding" data-category="branding">
-                  <a href="#" class="hover:opacity-80 block">
-                    <img src="https://picsum.photos/id/180/1000/1000" class="block w-full h-80 object-cover object-top" />
-                  </a>
-                </div>
-                <div class="grid-item element-item design" data-category="design">
-                  <a href="#" class="hover:opacity-80 block">
-                    <img src="https://picsum.photos/id/2/1000/1000" class="block w-full h-80 object-cover object-top" />
-                  </a>
-                </div>
-                <div class="grid-item element-item uiux" data-category="uiux">
-                  <a href="#" class="hover:opacity-80 block">
-                    <img src="https://picsum.photos/id/12/1000/1000" class="block w-full h-80 object-cover object-top" />
-                  </a>
-                </div>
-                <div class="grid-item element-item photography" data-category="photography">
-                  <a href="#" class="hover:opacity-80 block">
-            
-                    <img src="https://picsum.photos/id/56/1000/1000" class="block w-full h-80 object-cover object-top" />
-                  </a>
-                </div>
-                <div class="grid-item element-item photography" data-category="photography">
-                  <a href="#" class="hover:opacity-80 block">
-            
-                    <img src="https://picsum.photos/id/112/1000/1000" class="block w-full h-80 object-cover object-top" />
-                  </a>
-                </div>
-                <div class="grid-item element-item uiux" data-category="uiux">
-                  <a href="#" class="hover:opacity-80 block">
-            
-                    <img src="https://picsum.photos/id/98/1000/1000" class="block w-full h-80 object-cover object-top" />
-                  </a>
-                </div>
-                <div class="grid-item element-item design" data-category="design">
-                  <a href="#" class="hover:opacity-80 block">
-            
-                    <img src="https://picsum.photos/id/42/1000/1000" class="block w-full h-80 object-cover object-top" />
-                  </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full relative pt-10 lg:pt-20 bg-white">
+      <h2 class="uppercase text-black tracking-wider text-2xl font-bold text-center  mb-8 wow animate__slideInUp">
+        Great Work</h2>
+
+      <div class="flex flex-wrap justify-center content-center mb-10 wow animate__slideInUp">
+
+        <div class="button-group filters-button-group">
+          <button class="button px-1 md:px-2 lg:px-4 uppercase text-base is-checked" data-filter="*">All</button>
+          <button class="button px-1 md:px-2 lg:px-4 uppercase text-base" data-filter=".branding">Branding</button>
+          <button class="button px-1 md:px-2 lg:px-4 uppercase text-base" data-filter=".design">Design</button>
+          <button class="button px-1 md:px-2 lg:px-4 uppercase text-base" data-filter=".uiux">UI / UX</button>
+          <button class="button px-1 md:px-2 lg:px-4 uppercase text-base" data-filter=".photography">Photography</button>
+        </div>
+      </div>
+
+      <div class="gridMasonry w-full h-full relative block">
+        <div class="grid-sizer"></div>
+        <div class="grid-item element-item branding" data-category="branding">
+          <a href="#" class="hover:opacity-80 block">
+            <img src="https://picsum.photos/id/180/1000/1000" class="block w-full h-80 object-cover object-top" />
+          </a>
+        </div>
+        <div class="grid-item element-item design" data-category="design">
+          <a href="#" class="hover:opacity-80 block">
+            <img src="https://picsum.photos/id/2/1000/1000" class="block w-full h-80 object-cover object-top" />
+          </a>
+        </div>
+        <div class="grid-item element-item uiux" data-category="uiux">
+          <a href="#" class="hover:opacity-80 block">
+            <img src="https://picsum.photos/id/12/1000/1000" class="block w-full h-80 object-cover object-top" />
+          </a>
+        </div>
+        <div class="grid-item element-item photography" data-category="photography">
+          <a href="#" class="hover:opacity-80 block">
+
+            <img src="https://picsum.photos/id/56/1000/1000" class="block w-full h-80 object-cover object-top" />
+          </a>
+        </div>
+        <div class="grid-item element-item photography" data-category="photography">
+          <a href="#" class="hover:opacity-80 block">
+
+            <img src="https://picsum.photos/id/112/1000/1000" class="block w-full h-80 object-cover object-top" />
+          </a>
+        </div>
+        <div class="grid-item element-item uiux" data-category="uiux">
+          <a href="#" class="hover:opacity-80 block">
+
+            <img src="https://picsum.photos/id/98/1000/1000" class="block w-full h-80 object-cover object-top" />
+          </a>
+        </div>
+        <div class="grid-item element-item design" data-category="design">
+          <a href="#" class="hover:opacity-80 block">
+
+            <img src="https://picsum.photos/id/42/1000/1000" class="block w-full h-80 object-cover object-top" />
+          </a>
         </div>
         <div class="grid-item element-item branding" data-category="branding">
           <a href="#" class="hover:opacity-80 block">
-        
+
             <img src="https://picsum.photos/id/222/1000/1000" class="block w-full h-80 object-cover object-top" />
           </a>
         </div>

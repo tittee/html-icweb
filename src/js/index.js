@@ -1,5 +1,6 @@
 "use strict";
 
+import './../scss/index.scss';
 import WOW from "wow.js/dist/wow.js";
 import imagesLoaded from "imagesloaded";
 
@@ -33,9 +34,9 @@ scrollableElement.addEventListener("wheel", checkScrollDirection);
 
 function checkScrollDirection(event) {
   if (checkScrollDirectionIsUp(event)) {
-    console.log("up");
+    // console.log("up");
   } else {
-    console.log("down");
+    // console.log("down");
   }
 }
 
