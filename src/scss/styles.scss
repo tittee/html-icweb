@@ -1,3 +1,12 @@
+@import "~tailwindcss/base";
+@import "~tailwindcss/components";
+@import "~tailwindcss/utilities";
+@import "~swiper/swiper";
+@import "animate.css";
+
 body {
-  background-color: black;
+  font-size: 16px;
 }
+@import "./swiper-slide";
+@import "./countdown";
+@import "./grid";

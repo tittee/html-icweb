@@ -1,0 +1,15 @@
+{
+  "printWidth": 80,
+  "tabWidth": 2,
+  "useTabs": false,
+  "singleQuote": true,
+  "jsxSingleQuote": false,
+  
+  "bracketSpacing": true,
+  "jsxBracketSameLine": true,
+  "parser": "html",
+  "requirePragma": true,
+  "proseWrap": "never",
+  "endOfLine": "cr"
+}
+
