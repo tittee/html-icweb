@@ -111,6 +111,25 @@ var iso = new Isotope( elem, {
   }
 });
 
+imagesLoaded( elem ).on( 'progress', function() {
+  // layout Isotope after each image loads
+  iso.layout();
+});
+
+
+var timer;
+// elem.style.display = 'none';
+function endAndStartTimer() {
+  window.clearTimeout(timer);
+  //var millisecBeforeRedirect = 10000; 
+  timer = window.setTimeout(function(){
+    // elem.style.display = 'block';
+    document.getElementById("elemAll").click();
+  },5000); 
+}
+
+endAndStartTimer()
+
 // bind filter button click
 var filtersElem = document.querySelector('.filters-button-group');
 filtersElem.addEventListener( 'click', function( event ) {
