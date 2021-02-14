@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gulp.JS V3 - HTML Slicing</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
   <!-- <link rel="stylesheet" href="css/styles.css"> -->
 </head>
 
@@ -35,51 +36,159 @@
             </div>
             <div class="hidden sm:block sm:ml-auto">
               <div class="flex space-x-4">
-  
+
                 <a href="#" class="text-yellow-400 px-3 py-2 text-sm font-medium uppercase">Home</a>
                 <a href="#" class="text-gray-300 hover:text-yellow-100 px-3 py-2 rounded-md text-sm font-medium uppercase">About
                   Us</a>
                 <a href="#" class="text-gray-300 hover:text-yellow-100 px-3 py-2 rounded-md text-sm font-medium uppercase">News</a>
                 <a href="#" class="text-gray-300 hover:text-yellow-100 px-3 py-2 rounded-md text-sm font-medium uppercase">Contact
                   Us</a>
-                </div>
-                </div>
-                </div>
-                
-                </div>
-                </div>
-                </nav>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </nav>
   </header>
   <main>
     <div class="container-full position-relative">
-
-    
       <!-- Slider main container -->
-      <div class="swiper-container z-10">
+      <div class="swiper-container">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
-          <div class="swiper-slide"><a href="#"><img src="https://picsum.photos/id/1/2000/900"
-                alt="Image Web Developer"></a></div>
-          <div class="swiper-slide"><a href="#"><img src="https://picsum.photos/id/1/2000/900"
-                alt="Image Web Developer"></a></div>
-          <div class="swiper-slide"><a href="#"><img src="https://picsum.photos/id/1/2000/900"
-                alt="Image Web Developer"></a></div>
-        </div>
+          <div class="swiper-slide">
+            <figure class="flex w-full h-screen relative flex justify-center content-center">
+              <div class="swiper-slide__bg w-full bg-black bg-opacity-80">
+                <img src="https://picsum.photos/id/1/2000/900" alt="Image Web Developer"
+                  class="w-full h-full block object-cover object-center">
+              </div>
+              <figcaption class="swiper-slide__content absolute top-1/2 w-full md:w-1/2">
+                <h1 class="uppercase text-6xl text-white font-bold mb-6">Development</h1>
+                <h2 class="text-2xl text-white font-light mb-10">We are web developer</h2>
+                <div class="flex flex-nowrap justify-center">
+                  <a href="#"
+                    class="border-2 border-white text-white mx-2 px-6 py-2 hover:bg-white hover:text-black hover:border-white">Read
+                    More</a>
+                  <a href="#"
+                    class="border-2 border-white bg-white mx-2 text-black px-6 py-2 hover:bg-transparent hover:text-white">Learn
+                    More</a>
+                </div>
+              </figcaption>
+              </figure>
+              </div>
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <figure class="flex w-full h-screen relative flex justify-center content-center">
+                  <div class="swiper-slide__bg w-full bg-black bg-opacity-80">
+                    <img src="https://picsum.photos/id/1/2000/900" alt="Image Web Developer"
+                      class="w-full h-full block object-cover object-center">
+                  </div>
+                  <figcaption class="swiper-slide__content absolute top-1/2 w-full md:w-1/2">
+                    <h1 class="uppercase text-6xl text-white font-bold mb-6">Development</h1>
+                    <h2 class="text-2xl text-white font-light mb-10">We are web developer</h2>
+                    <div class="flex flex-nowrap justify-center">
+                      <a href="#"
+                        class="border-2 border-white text-white mx-2 px-6 py-2 hover:bg-white hover:text-black hover:border-white">Read
+                        More</a>
+                      <a href="#"
+                        class="border-2 border-white bg-white mx-2 text-black px-6 py-2 hover:bg-transparent hover:text-white">Learn
+                        More</a>
+                    </div>
+                  </figcaption>
+                </figure>
+              </div>
+              </div>
         <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
-    
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-    
-        <!-- If we need scrollbar -->
-        <div class="swiper-scrollbar"></div>
-      </div>
+        <div class="swiper-pagination justify-center mx-auto w-full md:w-1/2"></div>
 
-    </div>
+      </div>
+      </div>
+      <!-- Content -->
+      <section class="container mx-auto px-10 lg:px-40 py-10 lg:py-20 bg-white">
+        <h2
+          class="uppercase text-black tracking-wider text-xl font-bold text-center mb-16 animate__animated animate__slideInUp">
+          Service</h2>
+        <div class="flex flex-wrap">
+          <!-- Item -->
+          <div class="item w-full lg:w-1/3 text-center px-4 mb-10">
+            <div class="icon text-6xl text-gray-900 mb-6 font-light"><i class="fas fa-chalkboard"></i></div>
+            <h3 class="uppercase text-gray-900 mb-4 animate__animated animate__slideInUp">Web Design</h3>
+            <div class="content">
+              <p class="text-gray-500 animate__animated animate__slideInUp">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae a doloremque ratione minus et placeat optio
+                libero dolor, ipsum ipsa.
+              </p>
+            </div>
+          </div>
+          <!-- Item -->
+          <div class="item w-full lg:w-1/3 text-center px-4 mb-12">
+            <div class="icon text-6xl text-gray-900 mb-6 font-light"><i class="fas fa-database"></i></div>
+            <h3 class="uppercase text-gray-900 mb-4 animate__animated animate__slideInUp">Development</h3>
+            <div class="content">
+              <p class="text-gray-500 animate__animated animate__slideInUp">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae a doloremque ratione minus et placeat
+                optio
+                libero dolor, ipsum ipsa.
+              </p>
+            </div>
+          </div>
+          <!-- Item -->
+          <div class="item w-full lg:w-1/3 text-center px-4 mb-12">
+            <div class="icon text-6xl text-gray-900 mb-6 font-light"><i class="fas fa-code"></i></div>
+            <h3 class="uppercase text-gray-900 mb-4 animate__animated animate__slideInUp">Branding</h3>
+            <div class="content">
+              <p class="text-gray-500 animate__animated animate__slideInUp">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae a doloremque ratione minus et placeat
+                optio
+                libero dolor, ipsum ipsa.
+              </p>
+            </div>
+          </div>
+          
+          <!-- Item -->
+          <div class="item w-full lg:w-1/3 text-center px-4 mb-12">
+            <div class="icon text-6xl text-gray-900 mb-6 font-light text-6xl"><i class="fas fa-camera-retro"></i></div>
+            <h3 class="uppercase text-gray-900 mb-4 animate__animated animate__slideInUp">Photography</h3>
+            <div class="content">
+              <p class="text-gray-500 animate__animated animate__slideInUp">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae a doloremque ratione minus et placeat
+                optio
+                libero dolor, ipsum ipsa.
+              </p>
+            </div>
+          </div>
+          <!-- Item -->
+          <div class="item w-full lg:w-1/3 text-center px-4 mb-12">
+            <div class="icon text-6xl text-gray-900 mb-6 font-light"><i class="fas fa-font"></i></div>
+            <h3 class="uppercase text-gray-900 mb-4 animate__animated animate__slideInUp">Typhography</h3>
+            <div class="content">
+              <p class="text-gray-500 animate__animated animate__slideInUp">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae a doloremque ratione minus et placeat
+                optio
+                libero dolor, ipsum ipsa.
+              </p>
+            </div>
+          </div>
+          <!-- Item -->
+          <div class="item w-full lg:w-1/3 text-center px-4 mb-12">
+            <div class="icon text-6xl text-gray-900 mb-6 font-light"><i class="far fa-object-group"></i></div>
+            <h3 class="uppercase text-gray-900 mb-4 animate__animated animate__slideInUp">UI Design</h3>
+            <div class="content">
+              <p class="text-gray-500 animate__animated animate__slideInUp">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae a doloremque ratione minus et placeat
+                optio
+                libero dolor, ipsum ipsa.
+              </p>
+            </div>
+        </div>
+
+
+      </div>
+    </section>
   </main>
-  <footer></footer>  
+  <footer></footer>
   <!-- <script src="js/index.js"></script> -->
 </body>
 

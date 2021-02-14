@@ -21,14 +21,8 @@ module.exports = {
     compress: true,
     host: "localhost",
     hot: true,
-    // lazy: true,
-    // filename: "index.html",
-    // noInfo: true,
-    // overlay: {
-    //   warnings: true,
-    //   errors: true,
-    // },
     port: 9000,
+    open: true,
     inline: false,
   },
 

@@ -1,9 +1,10 @@
 @import "~tailwindcss/base";
 @import "~tailwindcss/components";
 @import "~tailwindcss/utilities";
-@import "~swiper/swiper.scss";
+@import "~swiper/swiper";
+@import "animate.css";
 
 body {
   font-size: 16px;
-  background-color: black;
 }
+@import "./swiper-slide"
