@@ -12,6 +12,7 @@
 2. [Animate](https://animate.style/) - CSS Animations
 3. [TailwindCSS](https://tailwindcss.com/docs/installation) - Modern CSS Ultilyty.
 4. [Isotope](https://isotope.metafizzy.co) - Filter & sort magical layouts
+5. [Webpack.JS](https://webpack.js.org/) - Webpack 5 bundle - ES6, SCSS and everthing.
 
 ## run NPM
 ```bash
