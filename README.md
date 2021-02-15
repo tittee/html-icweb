@@ -8,9 +8,11 @@
 
 ## Lib
 
-1. [GlideJS](https://glidejs.com/) - Javascript ES6 Slider
+1. [Swiper](https://swiperjs.com/) - Javascript ES6 Slider
 2. [Animate](https://animate.style/) - CSS Animations
-3. [CountDownJS](https://github.com/mckamey/countdownjs) - Count Donw Javascript
+3. [TailwindCSS](https://tailwindcss.com/docs/installation) - Modern CSS Ultilyty.
+4. [Isotope](https://isotope.metafizzy.co) - Filter & sort magical layouts
+5. [Webpack.JS](https://webpack.js.org/) - Webpack 5 bundle - ES6, SCSS and everthing.
 
 ## run NPM
 ```bash
