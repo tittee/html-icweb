@@ -27,6 +27,13 @@ npm start
 npm run build
 ```
 
+# How to open / deploy
+```bash
+1. goto Folder /dist/
+2. double click index.html or drag to your browser.
+3. Let's check
+```
+
 ## License
 
 Develop by [Wittawat Kittiwarabud](https://www.linkedin.com/in/wittawat-kittiwarabud-24a5a780/)
